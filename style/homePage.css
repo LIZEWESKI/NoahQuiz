@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,800;0,900;1,500&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.home-page-main-container{
+    margin-top: 40px;
+    padding: var(--padding-1);
+    text-align: center;
+}
+.puzzle-banner{
+    padding: var(--padding-1);
+    text-align: center;
+}
+.puzzle-banner p {
+    font-size: 18px;
+}
+.home-page-main-container h1{
+    font-size: 38px;
+    line-height: 120%;
+    margin-bottom: 25px;
+}
+.home-page-main-container p{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.home-page-main-container .quiz-themes{
+    margin-bottom: 15px;
+}
+.quiz-themes ul{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1em;row-gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.home-page-main-container button { 
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-1);
+    font-weight: 700;
+    padding: 0.5em;
+    cursor: pointer;
+    transition: 0.25s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+.home-page-main-container button span{
+    transition: 0.25s ease;
+}
+.home-page-main-container button:hover{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+.home-page-main-container button:hover > span{
+    color: var(--color-white);
+}
+.border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border div{
+    width: 50%;
+    border: 1px solid var(--color-span);
+}
+.puzzle-icon {
+    border: 1px solid var(--color-span);
+    padding: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 24px; 
+    animation: rotate 5s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
