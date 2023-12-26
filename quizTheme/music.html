@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style/shared/general.css">
+    <link rel="stylesheet" href="../style/shared/header.css">
+    <link rel="stylesheet" href="../style/shared/footer.css">
+    <link rel="stylesheet" href="../style/shared/responsive.css">
+    <link rel="stylesheet" href="../style/variables.css">
+    <link rel="stylesheet" href="../style/shared/quiz.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <title>Music Quiz</title>
+</head>
+<body>
+    <header class="glass">
+        <div class="logo-container">
+            <div>Noah's <span>Quiz</span></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../navPages/privacyPage.html">Privacy Policy</a></li>
+                <li><a href="../navPages/contactPage.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="dark-mode">
+            <span class="material-icons-sharp active">
+                light_mode
+            </span>
+            <span class="material-icons-sharp">
+                dark_mode
+            </span>
+        </div>
+        <div class="toggle">
+            <button id="toggle-menu" ><span class="material-symbols-outlined">menu</span></button>
+            <button id="toggle-X" class="hide" ><span class="material-symbols-outlined">close</span></button>
+        </div>
+    </header>
+    <aside class="hidden glass">
+        <nav>
+            <ul>
+                <li><a href="../navPages/privacyPage.html">Privacy Policy</a></li>
+                <li><a href="../navPages/contactPage.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="return-container">
+        <div class="return-homepage">
+          <a href="../homePage.html"><button><span class="material-symbols-outlined">keyboard_return</span> Return Home Page</button></a>
+        </div>
+    </div>
+    <main class="quiz-main-container">
+        <h1 class="title">Music Quiz</h1>
+        <section class="glass2 js-quiz-section">
+            <div class="question-count-container">
+                <span class="questionCounter"></span>
+            </div>
+            <h1 class="limit-text-to-2-line" id="question">Question?</h1>
+            <div class="labels">
+                <label for="a">
+                    <input type="radio" name="answer" id="a">
+                    <span id="labela">First Answer</span>
+                </label>
+                <label for="b" >
+                    <input type="radio" name="answer" id="b">
+                    <span id="labelb">Second Answer</span>
+                </label>
+                <label for="c" >
+                    <input type="radio" name="answer" id="c">
+                    <span id="labelc">Third Answer</span>
+                </label>
+                <label for="d">
+                    <input type="radio" name="answer" id="d">
+                    <span id="labeld">Forth Answer</span>
+                </label>
+            </div>
+            <div class="submit-cont">
+                <button id="submitBtn">Submit your Answer</button>      
+            </div>
+            <div >
+                <span class="error-msg"></span>
+            </div>
+        </section>
+    </main>
+    <h3>Try another quiz Theme?</h3>
+    <div class="quiz-themes">
+        <ul>
+            <li><a href="./religion.html"><button><span class="material-symbols-outlined">mosque</span>Religious</button></a></li>
+            <li><a href="./science.html"><button><span class="material-symbols-outlined">genetics</span>Science</button></a></li>
+            <li><a href="./history.html"><button><span class="material-symbols-outlined">history_edu</span>History</button></a></li>
+            <li><a href="./technology.html"><button><span class="material-symbols-outlined">biotech</span>Technology</button></a></li>
+            <li><a href="./entertainment.html"><button><span class="material-symbols-outlined">celebration</span>Entertainment</button></a></li>
+            <li><a href="./sports.html"><button><span class="material-symbols-outlined">sports_soccer</span>Sports</button></a></li>
+            <li><a href="./nature.html"><button><span class="material-symbols-outlined">spa</span>Nature</button></a></li>
+            <li><a href="./movies.html"><button><span class="material-symbols-outlined">movie</span>Movies</button></a></li>
+            <li><a href="./games.html"><button><span class="material-symbols-outlined">joystick</span>Games</button></a></li>
+        </ul>
+    </div>
+    <footer>
+        <div class="logo-container">
+            <div>Noah's <span>Quiz</span></div>
+        </div>
+        <div class="copyright-section">
+            © 2023 Noah's Quiz Property, LLC. Noah is a registered trademark of Noah's Quiz Property, LLC. All rights reserved.
+          </div>
+    </footer> 
+    <script type="module" src="../scripts/themes/music.js"></script>
+    <script src="../scripts/menu-darkMode.js"></script>
+</body>
+</html>
